@@ -67,7 +67,32 @@ esac
 
 indent "Installing Google Chrome from the $channel channel."
 
-PACKAGES="https://dl.google.com/linux/direct/google-chrome-${channel}_current_amd64.deb libxss1 libnss3 xvfb"
+PACKAGES="
+  https://dl.google.com/linux/direct/google-chrome-${channel}_current_amd64.deb
+  gconf-service
+  libappindicator1
+  libasound2
+  libatk1.0-0
+  libatk-bridge2.0-0
+  libcairo-gobject2
+  libgconf-2-4
+  libgtk-3-0
+  libnspr4
+  libnss3
+  libx11-xcb1
+  libxcomposite1
+  libxcursor1
+  libxdamage1
+  libxfixes3
+  libxi6
+  libxinerama1
+  libxrandr2
+  libxss1
+  libnss3
+  libxtst6
+  fonts-liberation
+  xvfb
+"
 
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
 APT_STATE_DIR="$CACHE_DIR/apt/state"
