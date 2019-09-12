@@ -82,6 +82,7 @@ PACKAGES="
   libxss1
   libnss3
   libxtst6
+  x11-xkb-utils
   fonts-liberation
   xvfb
 "
